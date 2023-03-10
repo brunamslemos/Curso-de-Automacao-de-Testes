@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+</head>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .calculadora {
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 460px;
+  }
+  .display {
+    padding: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 52px;
+    padding: 15px;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+  }
+  .m_buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn {
+    background-color: #616161;
+    padding: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+  }
+  .top_btn {
+    background-color: #333333;
+    font-size: 14px;
+  }
+  .func_btn {
+    background-color: #4a4a4a;
+  }
+  .equal_btn {
+    background-color: rgb(80, 217, 241);
+    color: #333333;
+  }
+  .btn:hover {
+    background-color: #333333;
+  }
+  .top_btn:hover {
+    color: #6e6e6e;
+  }
+  .equal_btn:hover {
+    background-color: rgb(22, 115, 131);
+    color: #ffffff;
+  }
+</style>
+<body>
+<div class="content">
+  <div class="calculadora">
+    <div class="display">
+      0
+    </div>
+    <div class="m_buttons">
+      <div class="btn top_btn">MC</div>
+      <div class="btn top_btn">MR</div>
+      <div class="btn top_btn">M+</div>
+      <div class="btn top_btn">M-</div>
+      <div class="btn top_btn">MS</div>
+    </div>
+    <div class="buttons">
+      <div class="btn func_btn">%</div>
+      <div class="btn func_btn">CE</div>
+      <div class="btn func_btn">C</div>
+      <div class="btn func_btn">DEL</div>
+      <div class="btn func_btn">1/x</div>
+      <div class="btn func_btn">x²</div>
+      <div class="btn func_btn">²√x</div>
+      <div class="btn func_btn">÷</div>
+      <div class="btn">7</div>
+      <div class="btn">8</div>
+      <div class="btn">9</div>
+      <div class="btn func_btn">X</div>
+      <div class="btn">4</div>
+      <div class="btn">5</div>
+      <div class="btn">6</div>
+      <div class="btn func_btn">-</div>
+      <div class="btn">1</div>
+      <div class="btn">2</div>
+      <div class="btn">3</div>
+      <div class="btn func_btn">+</div>
+      <div class="btn">+/-</div>
+      <div class="btn">0</div>
+      <div class="btn">,</div>
+      <div class="btn equal_btn">=</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
